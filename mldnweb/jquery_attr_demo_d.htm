@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>jQuery程序</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(function(){	// 等价于window.onload
+			$("[myatt^='msg'][id='msg']").attr("class","txt") ;
+		})
+	</script>
+</head>
+<body>
+	<div id="msg" myatt="msgDiv">www.mldn.cn = 1</div>
+	<div myatt="msgDiv">www.mldn.cn = 2</div>
+	<div myatt="infoDiv">www.mldnjava.cn</div>
+</body>
+</html>

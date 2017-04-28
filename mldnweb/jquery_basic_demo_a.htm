@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>jQuery程序</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(function(){	// 等价于window.onload
+			$(title).attr("class","txt") ;
+			// 以下这种参数上加“.”的做法实际上是一种很常见的功能，像最初的Struts开发框架就是这么设计的。
+			$("#name\\.msg").attr("class","txt") ;
+		})
+	</script>
+</head>
+<body>
+	<div id="name.msg">www.mldn.cn</div>
+	<div id="title">www.mldn.cn</div>
+</body>
+</html>

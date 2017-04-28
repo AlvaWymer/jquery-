@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>jQuery程序</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(function(){	// 等价于window.onload
+			$("div").each(function(ind){	// 元素的操作索引
+				console.log(ind + "，id = " + $(this).attr("id") + "、text = " + $(this).text()) ;
+				// $(this).text("<h1>今天天气不错！</h1>") ;
+				$(this).html("<h1>今天天气不错！</h1>") ;
+			}) ;
+		})
+	</script>
+</head>
+<body>
+	<div id="msg1">www.mldn.cn - 1</div>
+	<div id="msg2">www.mldn.cn - 2</div>
+	<div id="msg3">www.mldn.cn - 3</div>
+</body>
+</html>

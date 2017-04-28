@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>jQuery程序</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(function(){	// 等价于window.onload
+			deptnoData = new Array(10,20,30) ;
+			dnameData = new Array("开发部","技术部","市场部") ;
+			$("option:gt(0)").remove() ;
+			for (x = 0 ; x < deptnoData.length ; x ++) {
+				$(dept).append("<option value='"+deptnoData[x]+"'>"+dnameData[x]+"</option>") ;
+			}
+		})
+	</script>
+</head>
+<body>
+	<select id="dept">
+		<option value="">===== 选择部门 =====</option>
+		<option value="">===== 需要删除 =====</option>
+		<option value="">===== 需要删除 =====</option>
+		<option value="">===== 需要删除 =====</option>
+		<option value="">===== 需要删除 =====</option>
+	</select>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>jQuery程序</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(function(){	// 等价于window.onload
+			$("button[id^='edit']").each(function(){
+				$(this).on("click",function(){
+					deptno = this.id.split("-")[1] ;
+					$("#dept-" + deptno).text("新的部门 - " + deptno) ;
+				}) ;
+			}) ;
+		})
+	</script>
+</head>
+<body>
+	<div>
+		<span id="dept-1">部门1</span>：<button id="edit-1">编辑</button><br>
+		<span id="dept-2">部门2</span>：<button id="edit-2">编辑</button><br>
+		<span id="dept-3">部门3</span>：<button id="edit-3">编辑</button><br>
+	</div>
+	<button id="showBut">显示信息</button>
+</body>
+</html>

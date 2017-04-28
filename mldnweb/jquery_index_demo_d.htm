@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>jQuery程序</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(function(){	// 等价于window.onload
+			$("li:eq(0)").attr("class","txt") ;
+			$("li:gt(4)").attr("class","txt") ;
+			$("li:lt(2)").attr("class","txt") ;
+		})
+	</script>
+</head>
+<body>
+	<li>www.mldn.cn = 0</li>
+	<li>www.mldn.cn = 1</li>
+	<li>www.mldn.cn = 2</li>
+	<li>www.mldn.cn = 3</li>
+	<li>www.mldn.cn = 4</li>
+	<li>www.mldn.cn = 5</li>
+	<li>www.mldn.cn = 6</li>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>jQuery程序</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(function(){	// 等价于window.onload
+			$("img").each(function(){
+				$(this).on("mouseover",function(){
+					$(this).fadeOut(200,function(){
+						$(this).fadeIn(100) ;
+					}) ;
+				}) ;				
+			})
+		})
+	</script>
+</head>
+<body>
+	<img src="images/Browsers_001.png">
+	<img src="images/Browsers_002.png">
+	<img src="images/Browsers_003.png">
+	<img src="images/Browsers_004.png">
+	<img src="images/Browsers_005.png">
+	<img src="images/Browsers_006.png">
+	<img src="images/Browsers_007.png">
+	<img src="images/Browsers_008.png">
+	<img src="images/Browsers_009.png">
+</body>
+</html>

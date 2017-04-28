@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>jQuery程序</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(function(){	// 等价于window.onload
+			$("div:empty").attr("class","txt") ;
+		})
+	</script>
+</head>
+<body>
+	<div></div>
+	<div>www.mldn.cn - txt</div>
+	<div><p>www.mldn.cn - p</p></div>
+	<div><span>www.mldn.cn - span</span></div>
+</body>
+</html>

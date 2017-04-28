@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>jQuery程序</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(function(){	// 等价于window.onload
+			// 就是找到子代元素，不会继续向下找找
+			// $("#mydiv+span").attr("class","txt") ;
+			$("#mydiv").next("span").attr("class","txt") ;
+		})
+	</script>
+</head>
+<body>
+	<div id="mydiv"></div>
+	<span>www.mldn.cn = 1</span>
+	<span>www.mldn.cn = 2</span>
+</body>
+</html>

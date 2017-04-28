@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>jQuery程序</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(function(){	// 等价于window.onload
+			// 找到所有div元素，随后在has里面可以继续编写一个选择器筛选
+			$("div:has(':header')").attr("class","txt") ;
+		})
+	</script>
+</head>
+<body>
+	<div><p><span><p><h1>www.mldn.cn - h1</h1></p></span></p></div>
+	<div><p><span><p>www.mldn.cn - h2</p></span></p></div>
+	<div>www.mldn.cn - txt</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>jQuery程序</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(function(){	// 等价于window.onload
+			$(all).on("click",function(){
+				// 对于checked、selected、readonly等元素的操作要使用prop()函数
+				checkFlag = $(this).prop("checked") ;
+				$(cas).each(function(){
+					$(this).prop("checked",checkFlag) ;
+				}) ;
+			}) ;	// 绑定事件
+		})
+	</script>
+</head>
+<body>
+	<input type="checkbox" id="all">大家选择处理于顺的方案：<br>
+	<input type="checkbox" id="cas" value="用马鞭抽">用马鞭抽<br>
+	<input type="checkbox" id="cas" value="跪键盘">跪键盘<br>
+	<input type="checkbox" id="cas" value="半蹲三小时">半蹲三小时<br>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>jQuery程序</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(function(){	// 等价于window.onload
+			// document.getElementById("msg").firstChild.nodeValue;
+			console.log($(msg).text()) ;
+			// document.getElementById("msg").setAttribute("class","txt") ;
+			$(msg).attr("class","txt") ;
+		})
+	</script>
+</head>
+<body>
+	<div id="msg">www.mldn.cn</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>jQuery程序</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(function(){	// 等价于window.onload
+			$(myImg).hide(5000,function(){
+				$(this).show(8000) ;
+			}) ;
+		})
+	</script>
+</head>
+<body>
+	<img src="images/dog.jpg" id="myImg">
+	<div><h1>www.mldn.cn</h1></div>
+</body>
+</html>

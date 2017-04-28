@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>jQuery程序</title>
+	<meta charset="UTF-8"/>
+	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(function(){	// 等价于window.onload
+			deptnoData = new Array(10,20,30) ;
+			dnameData = new Array("开发部","技术部","市场部") ;
+			for (x = 0 ; x < deptnoData.length ; x ++) {
+				$(deptTable).append("<tr><td>"+deptnoData[x]+"</td><td>"+dnameData[x]+"</td></tr>") ;
+			}
+		})
+	</script>
+</head>
+<body>
+	<table border="1" id="deptTable">
+		<tr><td>部门编号</td><td>部门名称</td></tr>
+	</table>
+</body>
+</html>
